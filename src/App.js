@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+import { Form } from 'react-router-dom';
 import './App.css';
+import { ClassCompExample } from './components/ClassCompExample';
+import { UseEffect } from './components/Hooks/UseEffect';
+import { UseRef } from './components/Hooks/UseRef';
+import { UseStateHook } from './components/Hooks/UseStateHook';
+import { PropsExample } from './components/PropsExample';
+import { UseMemo } from './components/useMemo';
+import { ReactRouter } from './router/ReactRoutes';
+import { ContextUser } from './components/ContextApi/ContextUser';
+import { ExampleContext } from './components/ContextApi/ExampleContext';
+import { SimpleCatching } from './components/SimpleCatching.js';
 
 function App() {
+  const exampleProp = "what is your name?";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ClassCompExample/>
+     <p>Hello dev</p>
+     <PropsExample example={exampleProp}/>
+
+     <UseStateHook/>
+
+     <UseEffect/>
+
+     <UseRef/>
+
+     <UseMemo/>
+
+      {/* <Form/> */}
+
+     <ReactRouter/>
+
+     <ExampleContext>
+
+     <ContextUser/>
+     </ExampleContext>
+
+    {/* <SimpleCatching/> */}
+
+    
+    </>
   );
 }
 
