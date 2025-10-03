@@ -1,0 +1,24 @@
+components are the isolated resuable piece of code which we make using javascript and are the part of ui.
+react is all about components.
+or
+react component is a javascript function that we can sprinkle with markup.
+
+App.js is a component, index.js is a component.
+
+components names always starts with a capital letter.
+
+JSX is a syntax extension for javascript that allows us to crerate html like code inside the javascript. and with this jsx will look like html.
+we can add javascript inside jsx using curly braces {} and if we want to write html we use parenthesis.
+
+useState is a React hook which is used to manage states of a react component.
+
+react always assumes that every component we make is a pure component, that means for the same inputs the component will give same jsx
+
+useRef:- if we want to remember something in react, then we use ref to remember, unlike state ref doesnot re remder the component and we can get the value of the current reference using ref.current.
+
+useEffect: this is a hook in react js which is used to handle side effects of the react components.
+
+UseMemo hook memoizes the results of any function, and only re renders or re-evaluates if dependencies changes.
+UseCallback hook also memoize the functions itself and re renders the component until dependency changes.
+
+

@@ -1,5 +1,6 @@
 import { Form } from 'react-router-dom';
 import './App.css';
+
 import { ClassCompExample } from './components/ClassCompExample';
 import { UseEffect } from './components/Hooks/UseEffect';
 import { UseRef } from './components/Hooks/UseRef';
@@ -40,7 +41,7 @@ function App() {
 
     
     </>
-  );
+  )
 }
 
 export default App;
